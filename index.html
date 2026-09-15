@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portfólio | Allan Chagas</title>
+  <link rel="stylesheet" href="./Style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navegação -->
+  <!-- Substitua o trecho do <header> em ambos os arquivos por este: -->
+<header class="navbar">
+  <div class="header-left">
+    <button id="btn-music" class="btn-comic btn-music" onclick="toggleMusica()">▶️ Áudio</button>
+    <div class="logo">
+      <a href="index.html">allan<span>hq</span></a>
+    </div>
+  </div>
+
+  <div class="header-right">
+    <div class="menu-container">
+      <button class="btn-comic menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
+        ☰ Menu
+      </button>
+
+      <nav class="nav-links dropdown-menu" id="nav-menu">
+        <a href="index.html" data-i18n="inicio">Início</a>
+        <a href="sobre.html#sobre" data-i18n="sobre">Sobre Mim</a>
+        <a href="sobre.html#habilidades" data-i18n="habilidades">Habilidades</a>
+        <a href="sobre.html#soft-skills" data-i18n="softSkills">Soft Skills</a>
+        <a href="sobre.html#primeiro-emprego" data-i18n="primeiroEmprego">Primeiro Trabalho</a>
+        <a href="sobre.html#familia" data-i18n="familia">Família</a>
+        
+        <!-- Seleção de Idioma DENTRO do Menu -->
+        <div class="lang-selector-menu">
+          <span class="lang-title">Idioma:</span>
+          <div class="lang-buttons">
+            <button class="btn-lang active" data-lang="pt">PT</button>
+            <button class="btn-lang" data-lang="en">EN</button>
+            <button class="btn-lang" data-lang="fr">FR</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+  <!-- 1. Apresentação Hero (Estilo Capa de Quadrinho) -->
+  <section class="hero comic-box">
+    <div class="hero-content">
+      <div class="comic-badge" data-i18n="portfolio">MEU PORTFÓLIO</div>
+      <h1 class="comic-title" data-i18n="tituloPrincipal">Allan Chagas</h1>
+      <p class="comic-subtitle" data-i18n="subtituloPrincipal">Allan Chagas</p>
+      <div class="hero-buttons">
+        <a href="sobre.html" class="btn-comic btn-yellow" data-i18n="comecarHistoria">Começar História ➔</a>
+      </div>
+    </div>
+  </section>
+
+  <audio id="musica-fundo" loop src="sons/musica.mp3"></audio>
+  <script src="./script.js"></script>
+</body>
+</html>

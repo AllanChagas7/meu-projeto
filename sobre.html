@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Mim | HQ Allan Chagas</title>
+  <link rel="stylesheet" href="./Style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navegação -->
+  <!-- Substitua o trecho do <header> em ambos os arquivos por este: -->
+<header class="navbar">
+  <div class="header-left">
+    <button id="btn-music" class="btn-comic btn-music" onclick="toggleMusica()">▶️ Áudio</button>
+    <div class="logo">
+      <a href="index.html">allan<span>hq</span></a>
+    </div>
+  </div>
+
+  <div class="header-right">
+    <button id="btn-back" class="btn-comic btn-back" onclick="window.history.back()" aria-label="Voltar">
+      ⬅️ Voltar
+    </button>
+
+    <button class="btn-comic menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
+      ☰ Menu
+      <div class="menu-container">
+    </button>
+
+      <nav class="nav-links dropdown-menu" id="nav-menu">
+        <a href="index.html" data-i18n="inicio">Início</a>
+        <a href="sobre.html#sobre" data-i18n="sobre">Sobre Mim</a>
+        <a href="sobre.html#habilidades" data-i18n="habilidades">Habilidades</a>
+        <a href="sobre.html#projetos" data-i18n="projetos">Projetos</a>
+        <a href="sobre.html#soft-skills" data-i18n="softSkills">Soft Skills</a>
+        <a href="sobre.html#formacao" data-i18n="formacao">Formação</a>
+        <a href="sobre.html#primeiro-emprego" data-i18n="primeiroEmprego">Primeiro Trabalho</a>
+        <a href="sobre.html#familia" data-i18n="familia">Família</a>
+        
+        <!-- Seleção de Idioma DENTRO do Menu -->
+        <div class="lang-selector-menu">
+          <span class="lang-title">Idioma:</span>
+          <div class="lang-buttons">
+            <button class="btn-lang active" data-lang="pt">PT</button>
+            <button class="btn-lang" data-lang="en">EN</button>
+            <button class="btn-lang" data-lang="fr">FR</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+  <!-- Conteúdo em Quadrinhos -->
+  <main class="container page-content">
+    <!-- SEÇÃO 1: SOBRE MIM -->
+    <section id="sobre" class="comic-section">
+      <h1 class="page-title comic-heading" data-i18n="sobreMimTitulo">Sobre Mim</h1>
+      <div class="comic-box content-with-image">
+        <div class="image-box">
+          <img src="Assets/AllanAnimacao.jpg" alt="Minha foto" class="section-image">
+        </div>
+        <div class="text-box">
+          <h2 data-i18n="cap1Titulo">Quem Sou Eu</h2>
+          <p data-i18n="cap1Texto">Tenho 23 anos, cabelos escuros, pele parda, olhos escuros e uso óculos. Sou uma pessoa dedicada e curiosa ao ponto de ficar horas tentando algo até conseguir. Com formação técnica e foco contínuo no estudo para exames públicos e tecnologias, dedico cada dia ao aperfeiçoamento pessoal e profissional.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE PROJETOS (MISSÕES CUMPRIDAS) -->
+<section id="projetos" class="comic-section">
+  <h2 class="section-title comic-heading" data-i18n="projetosTitulo">Missões & Projetos</h2>
+
+  <div class="projects-grid">
+    <!-- Card de Projeto 1 -->
+    <article class="project-card comic-box">
+      <div class="project-badge">Projeto 01</div>
+      <h3 class="project-title">Site de variáveis de xadrez</h3>
+      <h2 class="project-text">Script de automação para processamento de dados e otimização de tarefas repetitivas, reduzindo o tempo de execução e aumentando a precisão.</h2>
+      <div class="project-techs">
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">CSS3</span>
+        <span class="tech-tag">HTML5</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com" target="_blank" class="btn-comic btn-yellow">Ver Projeto ➔</a>
+      </div>
+    </article>
+
+    <!-- Card de Projeto 2 -->
+    <article class="project-card comic-box">
+      <div class="project-badge">Projeto 02</div>
+      <h3 class="project-title">Site de Loja de Roupas</h3>
+      <h2 class="project-text">Aplicação web interativa com estilo visual de histórias em quadrinhos, responsividade, suporte multilíngue e reprodução de áudio.</h2>
+      <div class="project-techs">
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">CSS3</span>
+        <span class="tech-tag">HTML5</span>
+      </div>
+      <div class="project-links">
+        <a href="https://allanchagas7.github.io/loja_online/" target="_blank" class="btn-comic btn-yellow">Ver Projeto ➔</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- SEÇÃO DE FORMAÇÃO E CERTIFICADOS -->
+<section id="formacao" class="comic-section bg-comic-alt">
+  <h2 class="section-title comic-heading" data-i18n="formacaoTitulo">Formação Adquirida</h2>
+  
+  <div class="education-grid">
+    <div class="education-card comic-box">
+      <span class="edu-icon">🎓</span>
+      <h3>Técnico em Logística Portuária</h3>
+      <p>Capacitação técnica em gestão de operações, fluxos operacionais e rotinas administrativas.</p>
+    </div>
+    <div class="education-card comic-box">
+      <span class="edu-icon">📋</span>
+      <h3>Técnico em Assistência Administrativa</h3>
+      <p>Formação voltada para organização de processos, rotinas de escritório e atendimento.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- SEÇÃO 2: HABILIDADES -->
+<section id="habilidades" class="comic-section">
+  <h2 class="section-title comic-heading" data-i18n="habilidadesTitulo">Hard Skills</h2>
+  
+  <div class="skills-grid">
+    <div class="skill-card comic-box" data-color="#268fbe" onclick="activateSkill(this)">
+      <div class="skill-icon">🐍</div>
+      <h3>Python</h3>
+      <p>Automação, lógica e processamento de dados.</p>
+    </div>
+    <div class="skill-card comic-box" data-color="#eee964" onclick="activateSkill(this)">
+          <div class="skill-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Dinamismo, interatividade e scripts web.</p>
+        </div>
+        <div class="skill-card comic-box" data-color="#70a1ff" onclick="activateSkill(this)">
+          <div class="skill-icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Estilização, layouts responsivos e design.</p>
+        </div>
+        <div class="skill-card comic-box" data-color="#2ed573" onclick="activateSkill(this)">
+          <div class="skill-icon">💻</div>
+          <h3>Git Bash</h3>
+          <p>Controle de versão e comandos via terminal.</p>
+        </div>
+        <div class="skill-card comic-box" data-color="#a55eea" onclick="activateSkill(this)">
+          <div class="skill-icon">📐</div>
+          <h3>Figma</h3>
+          <p>Prototipagem e criação de interfaces visuais.</p>
+        </div>
+        <div class="skill-card comic-box" data-color="#ffa502" onclick="activateSkill(this)">
+          <div class="skill-icon">📝</div>
+          <h3>HTML</h3>
+          <p>Documentação e formatação de textos simples.</p>
+        </div>
+      </div>
+      
+      <div class="cv-download-box">
+        <a href="./Currículo jovem aprendiz primeiro emprego simples preto e branco_20260915_103222_0000.pdf" download class="btn-comic btn-blue" data-i18n="baixarCV">📄 Baixar Meu Currículo</a>
+      </div>
+    </section>
+    
+    <!-- SEÇÃO 3: SOFT SKILLS -->
+    <section id="soft-skills" class="comic-section bg-comic-alt">
+      <h2 class="section-title comic-heading" data-i18n="softSkillsTitulo">Soft Skills</h2>
+      <div class="soft-skills-grid">
+        <div class="soft-skill-item comic-box" data-i18n="comunicacao">Comunicação Clara</div>
+        <div class="soft-skill-item comic-box" data-i18n="trabalhoEquipe">Trabalho em Equipe</div>
+        <div class="soft-skill-item comic-box" data-i18n="resolucaoProblemas">Resolução de Problemas</div>
+        <div class="soft-skill-item comic-box" data-i18n="pontualidade">Organização & Pontualidade</div>
+        <div class="soft-skill-item comic-box" data-i18n="curiosidade">Aprendizado Contínuo</div>
+         <div class="soft-skill-item comic-box" data-i18n="curiosidade">Adaptabilidade</div>
+      </div>
+    </section>
+    
+    <!-- SEÇÃO 4: PRIMEIRO EMPREGO -->
+    <section id="primeiro-emprego" class="comic-section">
+      <h2 class="section-title comic-heading" data-i18n="primeiroEmpregoTitulo">Meu Primeiro Trabalho</h2>
+      <div class="comic-box content-with-image">
+        <div class="image-box">
+          <img src="Assets/allangari.jpg" alt="Meu primeiro trabalho" class="section-image">
+        </div>
+        <div class="text-box">
+          <h3 data-i18n="primeiroEmpregoSub">Trabalho Duro & Aprendizado</h3>
+          <h2>Estive atuando por 4 anos na linha de frente dos serviços de limpeza urbana,  e estive desenvolvendo resiliência, disciplina e profunda compreensão da rotina operacional de campo. Este período foi marcado pela conciliação entre o trabalho de alta exigência física e o exforço para a minha formação acadêmica em Administração e Logística Portuária.
+          Tive experiência prática na identificação de gargalos de processos, gestão de rotas e aplicação de inteligência operacional para resolução de conflitos, mantendo foco contínuo na ética, na conformidade legal e no desenvolvimento profissional.</h2>
+        </div>
+      </div>
+    </section>
+    
+    <!-- SEÇÃO 5: FAMÍLIA -->
+    <section id="familia" class="comic-section bg-comic-alt">
+      <h2 class="section-title comic-heading" data-i18n="familiaTitulo">Minha Família, Minha Base</h2>
+      <div class="comic-box content-with-image">
+        <div class="text-box">
+          <h3 data-i18n="familiaSub">Onde Tudo Começa</h3>
+          <p data-i18n="familiaTexto">A minha família é a minha principal estrutura e fonte de motivação diária. É nela que encontro os valores de responsabilidade, trabalho duro, respeito e perseverança que carrego para a minha vida pessoal e profissional.</p>
+        </div>
+        <div class="image-box">
+          <img src="Assets/familia.jpg" alt="Minha família" class="section-image">
+        </div>
+      </div>
+    </section>
+    <!-- SEÇÃO DE CONTATO (SINAL DE EMERGÊNCIA) -->
+    <section id="contato" class="comic-section">
+      <h2 class="section-title comic-heading" data-i18n="contatoTitulo">Envie um Sinal!</h2>
+      <div class="comic-box contact-box">
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+          <div class="form-group">
+            <label for="nome">Seu Nome / Recrutador:</label>
+            <input type="text" id="nome" required placeholder="Digite seu nome...">
+          </div>
+          <div class="form-group">
+            <label for="email">Seu E-mail:</label>
+            <input type="email" id="email" required placeholder="seuemail@exemplo.com">
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" rows="4" required placeholder="Escreva sua mensagem aqui..."></textarea>
+          </div>
+          <button type="submit" class="btn-comic btn-yellow">Enviar Mensagem ⚡</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer comic-box">
+    <div class="social-links">
+      <a href="https://linkedin.com/in/allanchagasbatista/" target="_blank" class="btn-comic btn-social btn-linkedin">LinkedIn</a>
+      <a href="https://github.com/AllanChagas7/" target="_blank" class="btn-comic btn-social btn-github">GitHub</a>
+      <a href="https://instagram.com/allan_chagas_/" target="_blank" class="btn-comic btn-social btn-instagram">Instagram</a>
+    </div>
+    <p data-i18n="direitos">© Allan Chagas - Jovem Tech.</p>
+  </footer>
+
+  <audio id="musica-fundo" loop src="sons/musica.mp3"></audio>
+  <script src="./script.js"></script>
+</body>
+</html>
